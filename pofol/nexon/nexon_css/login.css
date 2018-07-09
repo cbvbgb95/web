@@ -1,0 +1,201 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#f7f7f7}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* global */
+#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+
+/* UI Object */
+.tbl_type,.tbl_type th,.tbl_type td{border:0}
+.tbl_type{width:100%;border-bottom:2px solid #dcdcdc;font-family:Tahoma;font-size:11px;text-align:center}
+.tbl_type caption{display:none}
+.tbl_type th{padding:7px 0 4px;border-top:2px solid #dcdcdc;background-color:#f5f7f9;color:#666;font-family:'돋움',dotum;font-size:12px;font-weight:bold}
+.tbl_type td{padding:6px 0 4px;border-top:1px solid #e5e5e5;color:#4c4c4c}
+/* //UI Object */
+
+.wrap{
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.wrap .header_wrap{
+  width: 100%;
+  background: url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
+}
+
+.header_wrap .header{
+  width: 1170px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header h1{
+  float: left;
+  padding: 15px;
+  margin-top: 5px;
+  text-indent: -9999px;
+}
+
+.header h1 a{
+  display: block;
+  background: url(../nexon_imgs/nexon_logo.gif) 0 0 no-repeat;
+  width: 185px;
+  height: 30px;
+}
+
+.header .menu_depth1{
+  float: right;
+}
+
+.menu_depth1 li{
+  float: left;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.menu_depth1 a{
+  padding-left: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_depth1 li:first-child a{
+  background: url(../nexon_imgs/hmi.gif) 0 1px no-repeat;
+}
+
+.menu_depth1 li:nth-child(2) a{
+  background: url(../nexon_imgs/hmi2.gif) 0 1px no-repeat;
+}
+
+.menu_depth1 li:last-child a{
+  background: url(../nexon_imgs/hmi3.gif) 0 1px no-repeat;
+}
+
+/* /헤더 */
+
+/* 로그인박스 */
+
+.contents{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contents .log_h{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.log_h h2{
+  text-indent: -9999px;
+  background: url(../nexon_imgs/tit_login.png) 0 0 no-repeat;
+}
+
+.box_login {
+    margin:0 auto;
+    padding-bottom: 100px;
+    /* background:#fff; */
+}
+.box_login .form_login {
+    width:90%;
+    margin:0 auto;
+    padding:10px 0;
+}
+
+.box_login .item {
+    overflow:hidden;
+    position: relative;
+}
+
+.box_login .item .i_label {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+    float:none;
+    width:100%;
+    font-size:1.28em;
+    line-height:50px;
+    color: #aaa;
+}
+.box_login .item .i_text {
+    width:99%;
+    height:50px;
+    margin-bottom:12px;
+    /* padding-left:3%; */
+    border:1px solid #ccc;
+    /* border-radius:5px;모서리둥글게하는거 */
+    font-size:1.28em;
+    color:#000;
+}
+
+.box_login .saveid{
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+.box_login .btn_login {
+    float:right;
+    width:100%;
+    height:67px;
+    margin:40px 0 0 0;
+    background:#4160b8;
+    font-size:1.78em;
+    color:#fff;
+}
+
+.box_login .help{
+  margin: 15px 0;
+}
+
+.box_login .help a{
+  float: left;
+  margin-right: 5px;
+}
+
+.box_login .help .link_se{
+  padding-left: 15px;
+  float: right;
+  background: url(../nexon_imgs/ico_security.png) 0 5px no-repeat;
+}
+
+/* 아이디저장 */
+
+fieldset .saveid {
+  cursor:pointer;
+}
+
+fieldset .saveid input {
+  vertical-align:middle;
+}
+
+/* /아이디저장 */
+
+/* /로그인박스 */
+
+/* 풋터 */
+
+.footer{
+  width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #666;
+}
+
+.footer .copyright{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 50px 0;
+}

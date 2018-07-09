@@ -1,0 +1,635 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* global */
+#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+
+/* UI Object */
+.tbl_type,.tbl_type th,.tbl_type td{border:0}
+.tbl_type{width:100%;border-bottom:2px solid #dcdcdc;font-family:Tahoma;font-size:11px;text-align:center}
+.tbl_type caption{display:none}
+.tbl_type th{padding:7px 0 4px;border-top:2px solid #dcdcdc;background-color:#f5f7f9;color:#666;font-family:'돋움',dotum;font-size:12px;font-weight:bold}
+.tbl_type td{padding:6px 0 4px;border-top:1px solid #e5e5e5;color:#4c4c4c}
+/* //UI Object */
+
+.wrap{
+  /* overflow: hidden; */
+  width: 1600px;
+  margin: 0 auto;
+  background: #000 url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
+  /* background: #fff url(../imgs/op.jpg) 0 0 no-repeat; */
+}
+
+.wrap .header_wrap{
+  width: 100%;
+  background: url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
+}
+
+.header_wrap .header{
+  width: 1170px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header h1{
+  float: left;
+  padding: 15px;
+  margin-top: 5px;
+  text-indent: -9999px;
+}
+
+.header h1 a{
+  display: block;
+  background: url(../nexon_imgs/nexon_logo.gif) 0 0 no-repeat;
+  width: 185px;
+  height: 30px;
+}
+
+.header .menu_depth1{
+  float: right;
+}
+
+.menu_depth1 li{
+  float: left;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.menu_depth1 a{
+  padding-left: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_depth1 li:first-child a{
+  background: url(../nexon_imgs/hmi.gif) 0 1px no-repeat;
+}
+
+.menu_depth1 li:nth-child(2) a{
+  background: url(../nexon_imgs/hmi2.gif) 0 1px no-repeat;
+}
+
+.menu_depth1 li:last-child a{
+  background: url(../nexon_imgs/hmi3.gif) 0 1px no-repeat;
+}
+
+
+
+/* 배너 */
+
+
+
+
+/* 뚜루루루룹 스와이퍼어어얼 */
+
+.swiper-container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet{
+  width: 195px;
+  height: 70px;
+  margin: 0;
+  display: inline-block;
+  border-radius: 0;
+  background: #000;
+}
+
+.swiper-pagination-bullet:first-child{
+  background: #fff url(../nexon_imgs/bg_baner1.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet:nth-child(2){
+  background: #fff url(../nexon_imgs/bg_baner2.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet:nth-child(3){
+  background: #fff url(../nexon_imgs/bg_baner2.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet:nth-child(4){
+  background: #fff url(../nexon_imgs/bg_baner2.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet:nth-child(5){
+  background: #fff url(../nexon_imgs/bg_baner2.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet:last-child{
+  background: #fff url(../nexon_imgs/bg_baner2.gif) 0 0 no-repeat;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active{
+  opacity: 1 !important;
+}
+
+
+.contents1{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+
+.contents_top5{
+  position: relative;
+  float: left;
+  width: 775px;
+  height: 380px;
+  margin-top: 15px;
+  /* padding-top: 15px; */
+}
+
+.contents_top5 .top1{
+  position: absolute;
+  width: 380px;
+  height: 380px;
+}
+
+.contents_top5 .top1 img{
+  width: 395px;
+  height: 380px;
+}
+
+.contents_top5 .top2{
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: 190px;
+}
+
+.contents_top5 .top2 img{
+  width: 190px;
+  height: 190px;
+}
+
+.contents_top5 .top3{
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: 0px;
+}
+
+.contents_top5 .top3 img{
+  width: 190px;
+  height: 190px;
+}
+
+.contents_top5 .top4{
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  bottom: 0;
+  right: 190px;
+}
+
+.contents_top5 .top4 img{
+  width: 190px;
+  height: 190px;
+}
+
+.contents_top5 .top5{
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  bottom: 0;
+  right: 0;
+}
+
+.contents_top5 .top5 img{
+  width: 190px;
+  height: 190px;
+}
+
+.contents2{
+  overflow: hidden;
+  float: right;
+  background: #fff;
+  margin-top: 15px;
+  width: 380px;
+  height: 380px;
+}
+
+.contents_login{
+  width: 100%;
+  height: 200px;
+}
+
+.login_id a{
+  display: block;
+  margin: 30px auto 0;
+  border: 2px solid #597bb5;
+  background: #597bb5;
+  /* padding: 20px; */
+  width: 330px;
+  height: 40px;
+  text-align: center;
+  line-height: 37px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login_pc a{
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #597bb5;
+  /* padding: 20px; */
+  width: 330px;
+  height: 40px;
+  text-align: center;
+  line-height: 37px;
+  font-size: 16px;
+}
+
+.login_menu{
+  margin-left: 25px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+.login_menu .log_g{
+  float: right;
+  margin-right: 25px;
+}
+
+.contents_notice{
+  position: relative;
+  width: 330px;
+  height: 190px;
+  margin-left: 25px;
+}
+
+.contents_notice h2{
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contents_notice .list_notice{
+  font-size: 12px;
+}
+
+.list_notice span{
+  float: right;
+}
+
+.contents_notice .link_more{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 12px;
+}
+
+.contents_newgame{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.contents_newgame ul{
+  display: flex;
+}
+
+.contents_newgame li img{
+  width: 210px;
+  height: 210px;
+}
+
+.allgame_wrap{
+  position: relative;
+  width: 1170px;
+  height: 767px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.allgame_wrap h2{
+  position: absolute;
+  width: 270px;
+  height: 70px;
+  margin-top: 15px;
+  background: url(../nexon_imgs/allgame_t.gif) 0 0 no-repeat;
+}
+
+.game_tab {
+  height: 153px;
+  margin-top: 15px;
+  background: url(../nexon_imgs/allbg.gif) 0 0 no-repeat;
+  font-size: 18px;
+}
+
+.contents_allgame {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.contents_allgame h2{
+  text-indent: -9999px;
+}
+
+.contents_allgame li a{
+  color: #fff;
+}
+
+.contents_allgame ul .pcg{
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 63px;
+}
+
+.contents_allgame ul .pcg a{
+  padding: 30px 230px;
+  line-height: 230px;
+}
+
+.contents_allgame ul .mbg{
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 63px;
+}
+
+.contents_allgame ul .mbg a{
+  padding: 30px 245px;
+  line-height: 230px;
+}
+
+.section_game{
+  width: 100%;
+  height: 613px;
+  margin: 0 auto;
+  background: #7d7d7d;
+}
+
+.section_game .game_tab1{
+  display: flex;
+  float: left;
+  height: 70px;
+  width: 100%;
+  background: #000;
+  font-size: 18px;
+}
+
+
+
+/* footer */
+.footer {
+  clear:both;
+  width:1170px;
+  padding:100px 63px 0;
+  margin:0 auto;
+}
+
+.footer .snsInfo {
+  height:47px;
+  text-align:right;
+  color: #fff;
+}
+
+	.footer .snsInfo span {
+    display:inline-block;
+    padding:6px 4px 0 0;
+    vertical-align:top;
+    font-size:0.95em;
+    letter-spacing:-1px;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:0.7;
+  }
+
+.footerSrv {
+  position:relative;
+  width:1170px;
+  height:35px;
+  background: #666;
+}
+
+	.footerSrv .notice {
+    width:1170px;
+    overflow:hidden;
+  }
+
+	.footerSrv .notice dt {
+    float:left;
+    width:47px;
+    padding:10px;
+  }
+
+	.footerSrv .notice dt a {
+    display:block;
+    width:47px;
+    height:17px;
+  }
+
+	.footerSrv .notice dt a span {
+    position:absolute;
+    color: #fff;
+  }
+
+	.footerSrv .notice dd {
+    float:left;
+    width:703px;
+    padding:9px 0px 0px;
+    overflow:hidden;
+  }
+
+	.footerSrv .notice dd a {
+    position:relative;
+    color:#ffffff;
+  }
+
+	.footerSrv .notice dd a:hover {
+    color:#fff200;
+    text-decoration:underline;
+  }
+
+	.footerSrv .totalSrv {
+    position:absolute;
+    top:9px;
+    right:10px;
+    height:15px;
+    }
+
+	.footerSrv .totalSrv a {
+    display:block;
+    padding-right:7px;
+    font-size:0.95em;
+    letter-spacing:-1px;
+    color: #fff;
+  }
+
+	.footerSrv .totalSrv a:hover {
+    color:#ffffc0;
+    text-decoration:underline;
+  }
+
+	.footerSrv .gameTime {
+    position:absolute;
+    top:9px;
+    right:110px;
+    height:15px;
+  }
+
+	.footerSrv .gameTime a {
+    display:block;
+    padding-right:7px;
+    font-size:0.95em;
+    letter-spacing:-1px;
+    color: #fff;
+  }
+
+	.footerSrv .gameTime a:hover {
+    color:#ffffc0;
+    text-decoration:underline;
+  }
+
+.footer .deco {
+  position:relative;
+  width:1170px;
+  padding:15px 0px 80px;
+}
+
+	.footer .deco .logo {
+    width:70px;
+    height:21px;
+    padding:17px 0 0 10px;
+  }
+
+	.footer .deco .logo a {
+    display:block;
+    width:100px;
+    height: 25px;
+    background: url(../nexon_imgs/Nexon_Logo2.png) 0 0 no-repeat;
+  }
+
+	.footer .nav {
+    height:15px;
+    padding:5px 0px;
+  }
+
+	.footer .nav li {
+    float:left;
+    height:15px;
+    padding:0 11px 0 9px;
+  }
+
+	.footer .nav li a {
+    font-weight:bold;
+    letter-spacing:-1px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity:0.8;
+    color: #fff;
+  }
+
+	.footer .nav li a:hover {
+    text-decoration:underline;
+  }
+
+	.footer .nav li.privacy a {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity:1;
+  }
+
+	.footer .nav li.pcroom {
+    background-image:none;
+  }
+
+	.footer div.company {
+    position:absolute;
+    top:19px;
+    right:0px;
+  }
+
+	.footer div.company h3 a {
+    display:block;
+    width:113px;
+    height:20px;
+    padding:2px 0px 0px 8px;
+    color:#777777;
+    font-weight:normal;
+    background:#ffffff url(http://s.nx.com/S2/p3/main/set_footer.gif) no-repeat right -150px;
+  }
+
+	.footer div.company h3.up a {
+    background-position:right -200px;
+  }
+
+	.footer div.company ul {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:121px;
+    padding-bottom:9px;
+    background-color:#ffffff;
+  }
+
+	.footer div.company li {
+    height:18px;
+    padding:7px 0px 0px 9px;
+  }
+
+	.footer div.company li a {
+    color:#777777;
+  }
+
+	.footer div.company li a:hover {
+    text-decoration:underline;
+  }
+
+	.footer .deco address {
+    display:block;
+    padding:11px 0 0 10px;
+    width:700px;
+    font-size:11px;
+    font-style:normal;
+    line-height:1.4;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity:0.65;
+  }
+
+	.footer .deco address span {
+    padding-right:8px;
+    color: #fff;
+  }
+
+	.footer .deco address a.bizinfo {
+    text-decoration:underline;
+  }
+
+	.footer .deco .copyright {
+    display:block;
+    width:700px;
+    padding:3px 0 0 10px;
+    height:15px;
+    font-size:11px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity:0.65;
+    color: #fff;
+  }
+
+	.footer .deco .logo a span {
+    visibility:hidden;
+    position:absolute;
+    z-index:-1;
+  }
