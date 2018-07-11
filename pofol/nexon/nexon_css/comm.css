@@ -26,15 +26,25 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .tbl_type td{padding:6px 0 4px;border-top:1px solid #e5e5e5;color:#4c4c4c}
 /* //UI Object */
 
+body {
+	background: #000;
+}
+
 .wrap{
   /* overflow: hidden; */
-  width: 1600px;
+/*  width: 1200px;*/
   margin: 0 auto;
+	padding-top: 80px;
   background: #000 url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
   /* background: #fff url(../imgs/op.jpg) 0 0 no-repeat; */
 }
 
 .wrap .header_wrap{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 9999;
+	margin-left: -50%;
   width: 100%;
   background: url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
 }
@@ -146,6 +156,10 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
   margin: 0 auto;
 }
 
+.contents_wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
 
 
 .contents_top5{
@@ -393,13 +407,14 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 /* footer */
 .footer {
+	width: 1168px;
   clear:both;
-  width:1170px;
-  padding:100px 63px 0;
+  padding:100px 0 0;
   margin:0 auto;
 }
 
 .footer .snsInfo {
+/*	display: inline-block;*/
   height:47px;
   text-align:right;
   color: #fff;
@@ -416,13 +431,13 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 .footerSrv {
   position:relative;
-  width:1170px;
+/*  width:1170px;*/
   height:35px;
   background: #666;
 }
 
 	.footerSrv .notice {
-    width:1170px;
+/*    width:1170px;*/
     overflow:hidden;
   }
 

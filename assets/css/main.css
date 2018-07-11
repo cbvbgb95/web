@@ -175,6 +175,15 @@
 		font-size: 1.75em;
 	}
 
+h2 a {
+  font-size: 1.75em;
+  margin: 0 10px;
+}
+
+h2 a:hover{
+  color: #124f22;
+}
+
 	h3 {
 		font-size: 1.35em;
 	}
@@ -1559,6 +1568,10 @@
 				#footer .inner .copyright a {
 					color: #FFF;
 				}
+
+#footer .inner .content p{
+  text-align: center;
+}
 
 					#footer .inner .content a:hover,
 					#footer .inner .copyright a:hover {

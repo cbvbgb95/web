@@ -26,11 +26,16 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* //UI Object */
 
 .wrap{
-  width: 1600px;
   margin: 0 auto;
+	padding-top: 80px;
 }
 
 .wrap .header_wrap{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 9999;
+	margin-left: -50%;
   width: 100%;
   background: url(../nexon_imgs/logo_bg.gif) 0 0 repeat-x;
 }
@@ -188,7 +193,7 @@ fieldset .saveid input {
 /* 풋터 */
 
 .footer{
-  width: 1600px;
+/*  width: 1600px;*/
   margin: 0 auto;
   text-align: center;
   border-top: 1px solid #666;
