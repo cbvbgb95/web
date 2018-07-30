@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+*{
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ vertical-align: top;
+ text-decoration: none;
+ font-size: 14px;
+ color: #222;
+}
+
+.img_g{
+ background: url(../images/ico.png) 0 0 no-repeat;
+}
+
+.ico2{
+ background-position: -76px 0;
+}
+
+.ico3{
+ background-position: -152px 0;
+}
+
+
+.wrap{
+ width: 1200px;
+ margin: 0 auto;
+}
+
+.header{
+ padding-top: 40px;
+ height: 60px;
+}
+
+h1{
+ float: left;
+}
+
+h1 a{
+ display: block;
+ background: url(../images/logo.png) 0 0 no-repeat;
+ width: 115px;
+ height: 32px;
+ padding: 20px 30px 10px;
+ text-indent: -9999px;
+ background-position: 30px 10px;
+}
+
+.depth1>li{
+ float: right;
+ position: relative;
+}
+
+.depth1 li a{
+ display: block;
+ text-align: center;
+ width: 150px;
+ font-size: 18px;
+ padding: 20px 20px;
+}
+
+.depth1 li a:hover{
+ font-weight: bold;
+ color: #fff;
+ background: rgba(0,0,0,.5);
+}
+
+.depth2{
+ display: none;
+ position: absolute;
+ top: 64px;
+ z-index: 500;
+}
+
+.depth2 li a{
+ color: #222;
+ background: rgba(255,255,255,.5);
+}
+
+
+.main_slide{
+     position: relative; 
+ width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/*슬라이으드드으으으으으응*/
+
+/*페이드인시 옆으로 가는것이 아니기 때문에 앱솔루트 필요없음*/
+/*나머지 길이 안보이게 처리*/
+
+.main_slide li{
+    background: #fff;
+}
+
+/*첨부터 안보이게 처리*/
+.main_slide .big{
+    display: none;
+    position: relative;
+/*    width=100%;*/
+}
+
+/*첨부터 불투명도 주기*/
+.main_slide .small{
+    opacity: 0.7;   
+}
+
+/*small 각 클래스 위치조절 (사이즈에 따라 재량껏 변경)*/
+.main_slide .small_1{
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.main_slide .small_2{
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.main_slide .small_3{
+    float: right;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+.main_slide .small_4{
+    float: right;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+
+/*슬라이드끄으으으읕으,으으으으으으으으*/
+
+.contents{
+ padding-top: 40px;
+}
+
+.col h2{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	height: 200px;
+	background: url(../images/col_bg.png) 0 0 no-repeat;
+	background-position: center;
+	text-indent: -9999px;
+}
+
+.list li{
+	float: left;
+	width: 1200px;
+	padding-bottom: 50px;
+}
+
+.list a{
+	display: block;
+}
+
+.list img{
+	width: 60%;
+	float: left;
+}
+
+.list .txt{
+	float: left;
+	width: 40%;
+	padding-top: 150px;
+	text-align: center;
+}
+
+.txt h3{
+	font-size: 30px;
+}
+
+.store{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.store h2{
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.plist li{
+	position: relative;
+	width: 240px;
+	float: left;
+	margin-right: 80px;
+}
+
+.plist li:last-child{
+	margin: 0;
+}
+
+.plist li img{
+	width: 100%;
+}
+
+.plist .cover{
+	display: block;
+	width: 240px;
+	height: 250px;
+	background: rgba(0,0,0,.4);
+	position: absolute;
+	top: 0;left: 0;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 8;
+	opacity: 0;
+}
+
+.plist .cover:hover{
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+
+
+
+.col1{
+ width: 48%;
+ float: left;
+ height: 380px;
+ position: relative;
+	margin-top: 80px;
+}
+
+.col1 h2{
+ width: 100%;
+ border-bottom: 2px solid #000;
+ padding-bottom: 10px;
+ font-size: 18px;
+}
+
+.col1 .notice{
+ padding-top: 20px;
+}
+
+.notice li{
+ padding-bottom: 20px;
+}
+
+.notice li a{
+ padding: 10px 0;
+}
+
+.notice span{
+ float: right;
+}
+
+.col2{
+ width: 48%;
+ float: right;
+ height: 380px;
+ position: relative;
+	margin-top: 80px;
+}
+
+.col2 h2{
+ width: 100%;
+ border-bottom: 2px solid #000;
+ padding-bottom: 10px;
+ font-size: 18px;
+}
+
+.more{
+ position: absolute;
+ top: 8px;
+ right: 0;
+ background: url(../images/con1.png) 0 0 no-repeat;
+ width: 20px;
+ height: 20px;
+ text-indent: -9999px;
+ padding: 5px;
+}
+
+iframe{
+ padding-top: 20px;
+}
+
+.col3{
+ clear: both;
+ height: 200px;
+}
+
+.col3 a{
+ float: left;
+ width: 200px;
+ text-align: center;
+ line-height: 5;
+ margin: 0 83px;
+}
+
+.col3 a span{
+ display: inline-block;
+ text-align: center;
+ width: 76px;
+ height: 76px;
+ margin: 0 20px;
+}
+
+.col3 h2{
+ padding-bottom: 10px;
+ font-size: 18px;
+}
+
+.footer{
+ padding-top: 30px;
+ height: 120px;
+ background: #000;
+ text-align: center;
+}
+
+.footmenu a{
+ text-align: center;
+ color: #fff;
+}
+
+.footmenu span{
+ color: #ddd;
+ margin: 0 100px;
+}
+
+address{
+ color: #fff;
+ padding-top: 20px;
+}
+
+.copyright{
+ padding-top: 20px;
+ color: #ccc;
+}
+
