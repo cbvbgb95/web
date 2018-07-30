@@ -1573,6 +1573,12 @@ h2 a:hover{
   text-align: center;
 }
 
+
+#footer .inner .content img{
+  padding-top: 10px;
+  height: 180px;
+  margin: 0 auto;
+}
 					#footer .inner .content a:hover,
 					#footer .inner .copyright a:hover {
 						color: rgba(255, 255, 255, 0.75);
